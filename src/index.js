@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProviderWrapper } from './context/theme.context';
+import { AuthProviderWrapper } from './context/auth.context';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthProviderWrapper>
+      <ThemeProviderWrapper>
+        <Router>
+          <App />
+        </Router>
+      </ThemeProviderWrapper>
+    </AuthProviderWrapper>
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -15,3 +25,10 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+
+
+
+
