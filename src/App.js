@@ -10,6 +10,7 @@ import BMI from './pages/BMI';
 import Bmr from './pages/BMR/BMR';
 import SearchPage from './pages/SearchPage/SearchPage';
 import SearchRecipes from './pages/SearchRecipes/SearchRecipes';
+import PtForm from './pages/PtForm/PtForm';
 
 
 const StylesTag = styled.div`
@@ -29,6 +30,7 @@ function App() {
     <Route path="/bmi" element={<BMI />}/>
     <Route path="/bmr" element={<Bmr />}/>
     <Route path="/searchFood" element={<SearchPage/>}/>
+    <Route path="/ptform" element={<PtForm/>}/>
     <Route path="/searchRecipes" element={<SearchRecipes/>}/>
     </Routes>  
     </StylesTag>
