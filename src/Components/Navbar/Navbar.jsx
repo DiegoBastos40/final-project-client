@@ -13,8 +13,12 @@ function Navbar() {
       {loggedIn && (
         <>
           <Link to="/bmi"> Check your BMI</Link>
-          <Link to="/basalCalculator">Check your BMR</Link>
-          {user.username}
+          <Link to="/bmr">Check your BMR</Link>
+          <Link to="/profile">{user.username}</Link>
+          <Link to="/searchFood"> Seach Food</Link>
+          <Link to="/searchRecipes"> Seach Recipes</Link>
+          <Link to="/ptform">PT Request</Link>
+          
           <button onClick={logoutUser}>Logout</button>
         </>
       )}

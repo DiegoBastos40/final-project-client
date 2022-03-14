@@ -35,7 +35,8 @@ function PtForm(props) {
 
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+      e.preventDefault();
+      console.log(props)
    
     const body = {
     
