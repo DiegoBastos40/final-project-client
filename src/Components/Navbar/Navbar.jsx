@@ -12,7 +12,7 @@ function Navbar() {
       <Link to="/"> HomePage</Link>
       {loggedIn && (
         <>
-          <Link to="/imcCalculator"> Check your IMC</Link>
+          <Link to="/bmi"> Check your BMI</Link>
           <Link to="/basalCalculator">Check your BMR</Link>
           {user.username}
           <button onClick={logoutUser}>Logout</button>

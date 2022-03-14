@@ -24,6 +24,10 @@ function HomePage() {
         <>
           <Link to="/auth/signup"> Signup</Link>
           <Link to="/auth/login"> Login</Link>
+          <Link to="/bmi"> BMI Calculator</Link>
+          <Link to="/bmr"> BMR Calculator</Link>
+          <Link to="/searchFood"> Seach Food</Link>
+          <Link to="/searchRecipes"> Seach Recipes</Link>
         </>
       )}
     </nav>
