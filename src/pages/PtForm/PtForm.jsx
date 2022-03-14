@@ -67,7 +67,7 @@ function PtForm(props) {
     })
     .catch((err) => console.log(err));
 
-    props.addFood();
+    
     setName('');
     setEmail('');
     setTypeOfWorkout("");
