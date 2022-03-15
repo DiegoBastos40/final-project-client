@@ -5,11 +5,12 @@ import {ThemeContext} from '../context/theme.context.js';
 import { AuthContext } from '../context/auth.context';
 
 function HomePage() {
+  
     const { theme, toggleTheme } = useContext(ThemeContext)
   const { loggedIn, user, logoutUser } = useContext(AuthContext)
   return (
     <div>
-    <nav className={'Navbar' + theme}>
+ {/*    <nav classNameName={'Navbar' + theme}>
       <Link to="/"> HomePage</Link>
       {loggedIn && (
         <>
@@ -30,10 +31,7 @@ function HomePage() {
           <Link to="/searchRecipes"> Seach Recipes</Link>
         </>
       )}
-    </nav>
-    <h2>Search Food</h2>
-
-
+    </nav> */}
 
     </div>
   )

@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 *,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -19,7 +16,6 @@ div#bmrcalc {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
 }
 .form {
   width: 600px;

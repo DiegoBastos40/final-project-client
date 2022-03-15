@@ -33,7 +33,7 @@ function LoginPage() {
   return (
 
     <div>
-    <Navbar />
+   
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>
