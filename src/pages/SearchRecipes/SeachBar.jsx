@@ -3,6 +3,7 @@ import axios from "axios";
 import Recipe from "./Recipes";
 import { v4 as uuidv4 } from "uuid";
 import Alert from "./Alert";
+import "./SearchRecipes.css"
 
 function SeachBar(){ 
  const [query, setQuery] = useState("");

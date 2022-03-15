@@ -11,6 +11,8 @@ import Bmr from './pages/BMR/BMR';
 import SearchPage from './pages/SearchPage/SearchPage';
 import SeachBar from './pages/SearchRecipes/SeachBar';
 import PtForm from './pages/PtForm/PtForm';
+import Footer from './Components/Footer/Footer';
+import Profile from './pages/Profile/Profile';
 
 
 const StylesTag = styled.div`
@@ -32,7 +34,9 @@ function App() {
     <Route path="/searchFood" element={<SearchPage/>}/>
     <Route path="/ptform" element={<PtForm/>}/>
     <Route path="/searchRecipes" element={<SeachBar/>}/>
-    </Routes>  
+    <Route path="/profile" element={<Profile/>}/>
+    </Routes> 
+    <Footer />
     </StylesTag>
   );
 }

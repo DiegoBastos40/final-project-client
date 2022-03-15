@@ -52,7 +52,7 @@ function PtForm(props) {
       supplements,
 
     };
-  console.log(body)
+  console.log(body) 
   console.log(storedToken)
 
  axios
