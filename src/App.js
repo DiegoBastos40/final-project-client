@@ -9,7 +9,7 @@ import HomePage from './pages/HomePage';
 import BMI from './pages/BMI';
 import Bmr from './pages/BMR/BMR';
 import SearchPage from './pages/SearchPage/SearchPage';
-import SearchRecipes from './pages/SearchRecipes/SearchRecipes';
+import SeachBar from './pages/SearchRecipes/SeachBar';
 import PtForm from './pages/PtForm/PtForm';
 
 
@@ -31,10 +31,12 @@ function App() {
     <Route path="/bmr" element={<Bmr />}/>
     <Route path="/searchFood" element={<SearchPage/>}/>
     <Route path="/ptform" element={<PtForm/>}/>
-    <Route path="/searchRecipes" element={<SearchRecipes/>}/>
+    <Route path="/searchRecipes" element={<SeachBar/>}/>
     </Routes>  
     </StylesTag>
   );
 }
 
 export default App;
+
+

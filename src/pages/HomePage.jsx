@@ -7,6 +7,7 @@ import Cover from '../Components/Cover/Cover';
 import Modal from '../Components/Modal/Modal'
 
 function HomePage() {
+  
     const { theme, toggleTheme } = useContext(ThemeContext)
   const { loggedIn, user, logoutUser } = useContext(AuthContext)
   return (
