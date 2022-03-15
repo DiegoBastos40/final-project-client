@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from '../../context/auth.context.js';
-import Navbar from '../../Components/Navbar/Navbar.jsx';
+
 
 function LoginPage() {
   const [username, setUsername] = useState('');
@@ -33,7 +33,7 @@ function LoginPage() {
   return (
 
     <div>
-    <Navbar />
+    
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>

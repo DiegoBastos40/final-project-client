@@ -3,13 +3,15 @@ import Navbar from '../Components/Navbar/Navbar'
 import { Link } from 'react-router-dom';
 import {ThemeContext} from '../context/theme.context.js';
 import { AuthContext } from '../context/auth.context';
+import Cover from '../Components/Cover/Cover';
+import Modal from '../Components/Modal/Modal'
 
 function HomePage() {
     const { theme, toggleTheme } = useContext(ThemeContext)
   const { loggedIn, user, logoutUser } = useContext(AuthContext)
   return (
     <div>
-    <nav className={'Navbar' + theme}>
+    {/* <nav className={'Navbar' + theme}>
       <Link to="/"> HomePage</Link>
       {loggedIn && (
         <>
@@ -30,8 +32,10 @@ function HomePage() {
           <Link to="/searchRecipes"> Seach Recipes</Link>
         </>
       )}
-    </nav>
-    <h2>Search Food</h2>
+    </nav> */}
+<Cover />
+<Modal />
+    
 
 
 

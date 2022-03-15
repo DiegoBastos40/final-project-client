@@ -24,7 +24,7 @@ function App() {
     <StylesTag>
     <Navbar />
     <Routes>
-    {/* <Route path="/" element={<HomePage/>}></Route> */}
+    <Route path="/" element={<HomePage/>}></Route>
     <Route path="/auth/signup" element={<SignupPage />}/>
     <Route path="/auth/login" element={<LoginPage />}/>
     <Route path="/bmi" element={<BMI />}/>
