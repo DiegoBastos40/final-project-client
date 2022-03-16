@@ -69,32 +69,33 @@ h1 {
   text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
   text-transform: uppercase;
   margin: 4rem 0;
-  
-  .search-form {
-    width: 60rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #d3d3d3;
-    border-radius: 0.5rem;
-    margin-bottom: 5rem;
-    box-shadow: 1rem 2rem 5rem #aaa;
-    position: relative;
-  }
-  
-  .alert {
-    position: absolute;
-    top: -3rem;
-    left: 0;
-    background-color: rgb(233, 72, 72);
-    width: calc(100% - 0.4rem);
-    border-radius: 0.5rem;
-    padding: 0.2rem;
-  }
-  
-  .alert h3 {
-    font-size: 1.8rem;
+}
+
+.search-form {
+  width: 60rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d3d3;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+  box-shadow: 1rem 2rem 5rem #aaa;
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  background-color: rgb(233, 72, 72);
+  width: calc(100% - 0.4rem);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.alert h3 {
+  font-size: 1.8rem;
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
@@ -197,9 +198,4 @@ h1 {
 .ingredient-weight {
   color: black;
   font-size: 1.3rem;
-<<<<<<< HEAD
 } */
-=======
-} 
-}*/
->>>>>>> d3c9e65d0d3522902e9775835d9abf8b632d1e35
