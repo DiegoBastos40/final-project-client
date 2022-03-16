@@ -10,21 +10,25 @@ function EditFood() {
   const [fat, setFat] = useState(0);
   const [quantity, setQuantity] = useState(0);
  
-
+  const storedToken = localStorage.getItem("authToken");
   const { foodId } = useParams();
 
   const navigate = useNavigate();
 
   const deletefood = () => {
     axios
-      .delete(`${process.env.REACT_APP_API_URL}/diary/${foodId}`)
+      .delete(`${process.env.REACT_APP_API_URL}/diary/${foodId}`,{
+        headers: { Authorization: `Bearer ${storedToken}` },
+      })
       .then(() => navigate('/profile'));
   };
 
   const fetchFood = async () => {
     try {
-      let response = await axios.get(`${process.env.REACT_APP_API_URL}/diary/${foodId}`);
-      console.log(response)
+      let response = await axios.get(`${process.env.REACT_APP_API_URL}/diary/${foodId}`,{
+        headers: { Authorization: `Bearer ${storedToken}` },
+      });
+      console.log(response.data)
       let { name, calories, protein, carbohydrates, fat, quantity } = response.data;
       setName(name);
     setCalories(calories);
@@ -47,7 +51,9 @@ function EditFood() {
     const body = { name, calories, protein, carbohydrates, fat, quantity };
 
     axios
-      .put(`${process.env.REACT_APP_API_URL}/diary/${foodId}`, body)
+      .put(`${process.env.REACT_APP_API_URL}/diary/${foodId}`, body,{
+        headers: { Authorization: `Bearer ${storedToken}` },
+      })
       .then((response) => {
         setName('');
         setCalories(0);
