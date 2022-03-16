@@ -52,7 +52,7 @@ function PtForm(props) {
       supplements,
 
     };
-  console.log(body)
+  console.log(body) 
   console.log(storedToken)
 
  axios
@@ -63,7 +63,7 @@ function PtForm(props) {
       console.log('res.data', response.data);
       //storeToken(response.data.authToken);
       authenticateUser();
-      navigate('/HomePage');
+      navigate('/profile');
     })
     .catch((err) => console.log(err));
 

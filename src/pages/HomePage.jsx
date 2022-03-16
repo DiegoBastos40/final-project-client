@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import {ThemeContext} from '../context/theme.context.js';
 import { AuthContext } from '../context/auth.context';
 import Cover from '../Components/Cover/Cover';
-import Modal from '../Components/Modal/Modal'
+import Modal from '../Components/Modal/Modal';
+import CoverSecond from '../Components/Cover/CoverSecond';
 
 function HomePage() {
   
@@ -36,6 +37,8 @@ function HomePage() {
     </nav> */}
 <Cover />
 <Modal />
+<CoverSecond />
+
     
 
 

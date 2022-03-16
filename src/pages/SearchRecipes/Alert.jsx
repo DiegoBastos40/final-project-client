@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchRecipes.css"
 
 const Alert = ({ alert }) => {
   return (
