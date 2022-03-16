@@ -13,7 +13,12 @@ import SeachBar from './pages/SearchRecipes/SeachBar';
 import PtForm from './pages/PtForm/PtForm';
 import Footer from './Components/Footer/Footer';
 import Profile from './pages/Profile/Profile';
-
+import EditRequest from './pages/Profile/EditRequest';
+import CheckYourRequests from './pages/Profile/CheckYourRequests';
+import Breakfast from './pages/Profile/Breakfast';
+import Lunch from './pages/Profile/Lunch';
+import Dinner from './pages/Profile/Dinner';
+import Snacks from './pages/Profile/Snacks';
 
 const StylesTag = styled.div`
   {
@@ -35,6 +40,11 @@ function App() {
     <Route path="/ptform" element={<PtForm/>}/>
     <Route path="/searchRecipes" element={<SeachBar/>}/>
     <Route path="/profile" element={<Profile/>}/>
+   {/*  <Route path="/trainnerform/edit" element={<EditRequest/>}/> */}
+    <Route path="/trainnerform/edit/:requestId" element={<EditRequest/>}/>
+    <Route path="/yourRequests" element={<CheckYourRequests/>}/>
+    <Route path="/yourBreakfast" element={<Breakfast/>}/>
+
     </Routes> 
     <Footer />
     </StylesTag>

@@ -63,7 +63,7 @@ function PtForm(props) {
       console.log('res.data', response.data);
       //storeToken(response.data.authToken);
       authenticateUser();
-      navigate('/HomePage');
+      navigate('/profile');
     })
     .catch((err) => console.log(err));
 
