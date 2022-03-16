@@ -19,6 +19,7 @@ import Breakfast from './pages/Profile/Breakfast';
 import Lunch from './pages/Profile/Lunch';
 import Dinner from './pages/Profile/Dinner';
 import Snacks from './pages/Profile/Snacks';
+import EditFood from './pages/Profile/EditFood';
 
 const StylesTag = styled.div`
   {
@@ -42,6 +43,7 @@ function App() {
     <Route path="/profile" element={<Profile/>}/>
    {/*  <Route path="/trainnerform/edit" element={<EditRequest/>}/> */}
     <Route path="/trainnerform/edit/:requestId" element={<EditRequest/>}/>
+    <Route path="/diary/edit/:requestId" element={<EditFood/>}/>
     <Route path="/yourRequests" element={<CheckYourRequests/>}/>
     <Route path="/yourBreakfast" element={<Breakfast/>}/>
     <Route path="/yourLunch" element={<Lunch/>}/>
