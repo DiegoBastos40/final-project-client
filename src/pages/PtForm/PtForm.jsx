@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../../context/auth.context.js';
 import { Link, useNavigate } from 'react-router-dom';
-
+import "../../App.css"
 
 function PtForm(props) {
   const [name, setName] = useState('');
@@ -83,9 +83,9 @@ function PtForm(props) {
 
   };
   return (
-    <div>
-      <h2>Add Food</h2>
-      <form onSubmit={handleSubmit}>
+    <div className='iform'>
+      <h2>Personal Trainner Require</h2>
+      <form onSubmit={handleSubmit} className="form">
         <label> Name:</label>
         <input
           type="text"

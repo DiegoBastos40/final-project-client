@@ -92,7 +92,7 @@ select {
   font-size: 15px;
 }
 .error {
-  background: #bf2121;
+  background: rgb(175, 89, 18);
   color: white;
   text-align: center;
   padding: 4px 16px;
@@ -101,7 +101,7 @@ select {
   display: block;
 }
 .result {
-  background: red;
+  background: rgb(175, 89, 18);
   color: white;
   text-align: center;
   padding: 10px 0px;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../App.css'
 
 
 
@@ -34,8 +35,8 @@ function calculateBMI() {
 
   
 return (
-    <div className="w-full max-w-xs m-10">
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="iform">
+      <form className="form">
         <h1 className="text-center mb-4 text-xl"> BMI Calculator</h1>
         <div className="mb-4">
           <label
@@ -48,7 +49,7 @@ return (
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="Height "
             type="text"
-            placeholder="Height in cm"
+            placeholder="cm"
             value={height}
             onChange={(e) => setHeight(e.target.value)}
           />
@@ -64,7 +65,7 @@ return (
             className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
             id="Weight"
             type="Weight in kg"
-            placeholder="Weight in kg"
+            placeholder="kg"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
           />

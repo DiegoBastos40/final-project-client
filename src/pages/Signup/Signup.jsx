@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import '../../App.css'
 
 import Navbar from '../../Components/Navbar/Navbar';
 
@@ -43,10 +44,10 @@ function SignupPage() {
       .catch((err) => console.log(err));
   };
   return (
-    <div>
+    <div className='iform'>
     
       <h1>Signup</h1>
-      <form onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>
         <input type="text" name="username" value={username} onChange={handleUsername} />
 

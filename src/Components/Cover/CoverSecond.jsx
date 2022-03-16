@@ -16,7 +16,7 @@ function CoverSecond() {
   return (
       <div className="section-all">
       <IconTag className="section-2">
-      <div>
+      <div className="square">
         <IoIosFitness className="my-react-icons" />
         <h2>PT Form</h2>
         <p>
@@ -24,7 +24,7 @@ function CoverSecond() {
         </p>
       </div>
 
-      <div>
+      <div className="square">
         <BiFoodMenu className="my-react-icons" />
         <h2>Find Healthy Recipes</h2>
         <p>
@@ -32,7 +32,7 @@ function CoverSecond() {
         </p>
       </div>
 
-      <div>
+      <div className="square">
         <GiDonut className="my-react-icons" />
         <h2>Want to know if you could eat that Donut ?</h2>
         <p>Search here the nutrition value of any food and find out the damage that it would make to your daily meal plan</p>

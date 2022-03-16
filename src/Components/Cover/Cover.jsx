@@ -10,7 +10,7 @@ const SectionTag = styled.section`
   {
     background: url(https://images.pexels.com/photos/2092479/pexels-photo-2092479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center no-repeat;
  
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +37,7 @@ function Cover() {
 
     return (
         <SectionTag>
+        
            {/*  <div>
                 
                 <Button variant="primary" onClick={() => setModalShow(true)}>

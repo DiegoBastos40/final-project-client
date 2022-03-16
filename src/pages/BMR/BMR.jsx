@@ -185,12 +185,13 @@ export class Bmr extends Component {
           </div>
 
           <div className="inputwrap">
-            <label className="label">Weight in Kilogram</label>
+            <label className="label">Weight</label>
             <input
               type="number"
               value={this.state.weight}
               onChange={this.handleWeightChange}
               name="weight"
+            placeholder="kg"
               className="weight"
               min="0"
               max="999"
@@ -198,11 +199,12 @@ export class Bmr extends Component {
           </div>
 
           <div className="inputwrap">
-            <label className="label">Height in cm</label>
+            <label className="label">Height</label>
             <input
               type="number"
               value={this.state.heightCm}
               onChange={this.handleHeightCmChange}
+              placeholder="cm"
               name="heightCm"
               className="heightFeet heightCm"
               min="0"
@@ -214,7 +216,7 @@ export class Bmr extends Component {
           </div>
 
           <div className="inputwrap">
-            <label className="label">Age in years</label>
+            <label className="label">Age</label>
             <input
               type="number"
               value={this.state.age}

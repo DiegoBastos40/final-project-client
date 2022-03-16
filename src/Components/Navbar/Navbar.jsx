@@ -4,35 +4,6 @@ import {ThemeContext} from '../../context/theme.context';
 import { AuthContext } from '../../context/auth.context';
 import "./Navbar.css"
 
-/* function Navbar() {
-  const { theme, toggleTheme } = useContext(ThemeContext)
-  const { loggedIn, user, logoutUser } = useContext(AuthContext);
-
-  return (
-    <nav className={'Navbar'}>
-      <Link to="/"> HomePage</Link>
-      {loggedIn && (
-        <>
-          <Link to="/bmi"> Check your BMI</Link>
-          <Link to="/bmr">Check your BMR</Link>
-          <Link to="/searchFood"> Seach Food</Link>
-          <Link to="/searchRecipes"> Seach Recipes</Link>
-          <Link to="/ptform">PT Request</Link>
-          <Link to="/profile">{user.username}</Link>
-          
-          <button onClick={logoutUser}>Logout</button>
-        </>
-      )}
-
-      {!loggedIn && (
-        <>
-          <Link to="/auth/signup"> Signup</Link>
-          <Link to="/auth/login"> Login</Link>
-        </>
-      )}
-    </nav>
-  );
-} */
 
 function Navbar() {
   const { loggedIn, user, logoutUser } = useContext(AuthContext);
@@ -85,7 +56,7 @@ function Navbar() {
         </div>
       </nav>
 
-      <div className="menuIcon">
+      {/* <div className="menuIcon">
         <span className="icon icon-bars"></span>
         <span className="icon icon-bars overlay"></span>
       </div>
@@ -105,7 +76,7 @@ function Navbar() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -44,6 +44,9 @@ function App() {
     <Route path="/trainnerform/edit/:requestId" element={<EditRequest/>}/>
     <Route path="/yourRequests" element={<CheckYourRequests/>}/>
     <Route path="/yourBreakfast" element={<Breakfast/>}/>
+    <Route path="/yourLunch" element={<Lunch/>}/>
+    <Route path="/yourDinner" element={<Dinner/>}/>
+    <Route path="/yourSnacks" element={<Snacks/>}/>
 
     </Routes> 
     <Footer />

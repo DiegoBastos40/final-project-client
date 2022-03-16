@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from '../../context/auth.context.js';
+import '../../App.css'
 
 
 function LoginPage() {
@@ -32,10 +33,10 @@ function LoginPage() {
   };
   return (
 
-    <div>
+    <div className='iform'>
     
       <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>
         <input type="text" name="username" value={username} onChange={handleUsername} />
 
