@@ -100,67 +100,99 @@ function PtForm(props) {
           value={email}
           onChange={handleEmailInput}
         />
-        <label> TypeOfWorkout:</label>
+
+
+
+        <label> Type Of Workout:</label>
+        
+
+
+
+<select
+              className="activity"
+              value={typeOfWorkout}
+              onChange={handleTypeOfWorkoutInput}
+              name="typeOfWorkout"
+            >
+              
+              <option value="Body Weight">
+              Body Weight
+              </option>
+              <option value="Gym Workout">
+              Gym Workout
+              </option>
+              <option value="Just Cardio">
+              Just Cardio
+              </option>
+              
+            </select>
+
+
+
+
+        
+        <label> Workout Frequency (times/week):</label>
         <input
-          type="text"
-          name="typeOfWorkout"
-          value={typeOfWorkout}
-          onChange={handleTypeOfWorkoutInput}
-        />
-        <label> WorkoutFrequency:</label>
-        <input
-          type="text"
+          type="number"
           name="workoutFrequency"
           value={workoutFrequency}
           onChange={handleWorkoutFrequencyInput}
         />
 
-        <label> WorkoutSessionTime:</label>
+        <label> Workout Session Time (min):</label>
         <input
-          type="text"
+          type="number"
           name="WorkoutSessionTime"
           value={workoutSessionTime}
           onChange={handleWorkoutSessionTimeInput}
         />
-        <label> Drink:</label>
-        <input
-          type="String"
-          name="drink"
-          value={drink}
-          onChange={handleDrinkInput}
-        />
+        <label>Do you Drink ?</label>
+        <div className="flex-row"> 
+        <input type="radio" value="yes" name="drink"  onChange={handleDrinkInput} /> Yes
+        <input type="radio" value={drink} name="drink"  onChange={handleDrinkInput}/> No
+        </div>
 
-        <label> Smoke:</label>
-        <input
-          type="String"
-          name="smoke"
-          value={smoke}
-          onChange={handleSmokeInput}
-        />
+        <label>Do You Smoke ?</label>
+        <div className="flex-row"> 
+        <input type="radio" value="Yes" name="smoke"  onChange={handleSmokeInput} /> Yes
+        <input type="radio" value="No" name="smoke"  onChange={handleSmokeInput}/> No
+        </div>
 
-        <label> WorkedoutBefore:</label>
-        <input
-          type="String"
-          name="workedoutBefore"
-          value={workedoutBefore}
-          onChange={handleWorkedoutBeforeInput}
-        />
+        <label> Workedout Before ?</label>
+        <div className="flex-row"> 
+        <input type="radio" value="Yes" name="workedoutBefore"  onChange={handleWorkedoutBeforeInput} /> Yes
+        <input type="radio" value="No" name="workedoutBefore"  onChange={handleWorkedoutBeforeInput}/> No
+        </div>
+
+        <label>Do you take Supplements ?</label>
+        <div className="flex-row"> 
+        <input type="radio" value="Yes" name="supplements"  onChange={handleSupplementsInput} /> Yes
+        <input type="radio" value="No" name="supplements"  onChange={handleSupplementsInput}/> No
+        </div>
 
         <label> DietType:</label>
-        <input
-          type="text"
-          name="dietType"
-          value={dietType}
-          onChange={handleDietTypeInput}
-        />
+      
 
-        <label> Supplements:</label>
-        <input
-          type="String"
-          name="supplements"
-          value={supplements}
-          onChange={handleSupplementsInput}
-        /> 
+<select
+              className="activity"
+              value={dietType}
+              onChange={handleDietTypeInput}
+              name="activity"
+            >
+              
+              <option value="Vegeterian">
+              Vegeterian
+              </option>
+              <option value="Veggan">
+                Veggan
+              </option>
+              <option value="No Restrictions">
+              No Restrictions
+              </option>
+              
+            </select>
+
+
  
 
         <button type="submit"> Submit Form</button>

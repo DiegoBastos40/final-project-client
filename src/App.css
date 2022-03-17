@@ -44,12 +44,27 @@
   display: flex;
   flex-direction: column;
   padding: 20vh;
+
 }
 .iform{
   display: flex;
   flex-direction: column;
   align-items: center;
 
+}
+
+form input {
+  min-height: 37px;
+}
+
+.iform button {
+  margin-top: 30px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 

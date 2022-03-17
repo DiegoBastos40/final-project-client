@@ -60,10 +60,13 @@ function SignupPage() {
         <label htmlFor="age">Age</label>
         <input type="number" name="age" value={age} onChange={handleAge} />
 
-        <label htmlFor="gender"></label>
+        <label htmlFor="gender"></label> 
+        
+        <div className="flex-row">
       
         <input type="radio" value="Male" name="gender"  onChange={handleGender} /> Male
         <input type="radio" value="Female" name="gender"  onChange={handleGender}/> Female
+    </div>
 
         <label htmlFor="height">Height</label>
         <input type="number" name="height" value={height} onChange={handleHeight} />
@@ -72,10 +75,10 @@ function SignupPage() {
         <input type="number" name="weight" value={weight} onChange={handleWeight} />
 
         <label htmlFor="objective"></label>
-    
+    <div className="flex-row">
         <input type="radio" value="Build Muscle" name="objective"  onChange={handleObjective} /> Build Muscle
         <input type="radio" value="Lose Fat" name="objective"  onChange={handleObjective}/> Lose Fat
-
+</div>
         <label htmlFor="lifestyle">Life Style</label>
        
         <select

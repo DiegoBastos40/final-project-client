@@ -9,10 +9,10 @@ function EditRequest() {
     const [workoutFrequency, setWorkoutFrequency] = useState("");
     const [workoutSessionTime, setWorkoutSessionTime] = useState("");
     const [drink, setDrink] = useState("");
-    const [smoke, setSmoke] = useState(false);
-    const [workedoutBefore, setWorkedoutBefore] = useState(false);
-    const [dietType, setDietType] = useState(false);
-    const [supplements, setSupplements] = useState(false);
+    const [smoke, setSmoke] = useState("");
+    const [workedoutBefore, setWorkedoutBefore] = useState("");
+    const [dietType, setDietType] = useState("");
+    const [supplements, setSupplements] = useState("");
 
   const { requestId } = useParams();
 
