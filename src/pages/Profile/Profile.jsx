@@ -78,7 +78,7 @@ function Profile() {
                         <p>calories: {(req.calories)*(req.quantity)}</p>
                                              
 
-                        <Link to={`/diary/edit/${req._id}`}>Edit Food</Link>
+                        <Link to={`/diary/edit/${req._id}`}>Edit</Link> <hr />
                       </li>
                     ))}
                   </div>
@@ -96,7 +96,7 @@ function Profile() {
                         <p>calories: {(req.calories)*(req.quantity)}</p>
                       
 
-                        <Link to={`/diary/edit/${req._id}`}>Edit Food</Link>
+                        <Link to={`/diary/edit/${req._id}`}>Edit</Link> <hr />
                       </li>
                     ))}
                   </div>
@@ -114,7 +114,7 @@ function Profile() {
                         <p>calories: {(req.calories)*(req.quantity)}</p>
                       
 
-                        <Link to={`/diary/edit/${req._id}`}>Edit Food</Link>
+                        <Link to={`/diary/edit/${req._id}`}>Edit</Link><hr />
                       </li>
                     ))}
                   </div>
