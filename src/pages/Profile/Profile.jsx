@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../../context/auth.context.js";
+import '../Profile/Profile.css'
 
 function Profile() {
   const { authenticateUser } = useContext(AuthContext);
@@ -28,15 +29,33 @@ function Profile() {
     <div>
       <div>
         <h2>Profile</h2>
+     
+       
         <li>
                   <Link to="/yourRequests">Check your Requests</Link>
                 </li>
-                
+
+        <div className="food-boxes">
+                <div className="food-card">
+               
                   <h1><Link to="/yourBreakfast">Breakfast</Link></h1>
+                  <div>
+                    
+                  </div>
+                  </div>
+
+                  <div className="food-card">
                   <h1><Link to="/yourLunch">Lunch</Link></h1>
+                  </div>
+
+                  <div className="food-card">
                   <h1><Link to="/yourDinner">Dinner</Link></h1>
+                  </div>
+                  
+                  <div className="food-card">
                   <h1><Link to="/yourSnacks">Snacks</Link></h1>
-        
+                  </div>
+        </div>
 
 
     </div>
@@ -49,14 +68,14 @@ function Profile() {
             <p>protein: {req.protein}</p>
             <p>carbohydrates: {req.carbohydrates}</p>
             <p>fat: {req.fat}</p>
-            <p>quantity?: {req.quantity}</p>
+            <p>quantity: {req.quantity}</p>
            
 
             <Link to={`/diary/edit/${req._id}`}>Edit Food</Link>
           </li>
         ))}
 
-      <Link to="/profile"> Back to Requests List</Link>
+      
     </div>
   );
 }

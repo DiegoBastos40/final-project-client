@@ -1,0 +1,13 @@
+.food-card {
+padding: 5px;
+width: 20%;
+background-color: black;
+
+}
+
+.food-boxes {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: orange;
+}
