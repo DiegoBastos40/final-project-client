@@ -72,9 +72,9 @@ function EditRequest() {
   };
 
   return (
-    <div>
+    <div className='iform'>
       <h3>Edit Request</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <label htmlFor="name">Name</label>
         <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />
 

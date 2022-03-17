@@ -13,6 +13,8 @@ const FooterTag = styled.footer`
     justify-content: center;
     align-items: center;
     align-content: stretch;
+    position:absolute;
+
   }
   a {
     color: white;

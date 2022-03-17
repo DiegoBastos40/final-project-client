@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    font-family: oswald;
+    text-transform: capitalize;
+}
+
 .food-card {
 padding: 5px;
-width: 20%;
-background-color: black;
+min-width: 20%;
+border-radius: 2.5rem;
+box-shadow: 2rem 3rem 5rem #aaa;
 
+}
+
+
+
+.food-card h1 {
+    text-align: center;
+    
+}
+
+.food-card a {
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.h2 h2{
+padding: 1vh;
+background-color: rgb(43, 115, 173);
+color: white;
+}
+
+.food-card > .edit li a {
+    text-decoration: none;
+    text-align: center; 
+   
+}
+
+.food-card p {
+    text-decoration: none;
+    text-align: center;
+    
 }
 
 .food-boxes {
     display: flex;
-    justify-content: space-between;
-    height: 20vh;
-    background-color: orange;
+    justify-content: space-around;
+    min-height: 20vh;
+    padding: 2vh;
+
+}
+
+.function li {
+    display: flex;
+   
+}
+
+.function li p {
+    padding: 8px;
 }

@@ -8,7 +8,7 @@ a {
   #navbars {
 
     
-    background: white;
+    background: rgb(158, 156, 156);
     color: rgb(13, 26, 38);
     top: 0;
     line-height: 60px;
@@ -44,7 +44,7 @@ a {
   #navbars li a {
     color: rgb(13, 26, 38);
     display: block;
-    font-size: 0.7em;
+    font-size: 1em;
     height: 50px;
     letter-spacing: 1px;
     margin: 0 20px;
@@ -80,7 +80,7 @@ a {
   }
   
   #navbars li a:after {
-    background: #4d4847;
+    background: #080808;
     right: 0;
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
   }

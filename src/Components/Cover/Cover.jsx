@@ -1,15 +1,19 @@
 import { useState } from 'react';
 
 import MyVerticallyCenteredModal from '../Modal/Modal';
-
 import Button from 'react-bootstrap/Button'
-
 import styled from "styled-components";
+import back from '../../video/video.mp4'
+import '../../App.css'
+
+
+
+//https://images.pexels.com/photos/2092479/pexels-photo-2092479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 
 const SectionTag = styled.section`
   {
-    background: url(https://images.pexels.com/photos/2092479/pexels-photo-2092479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center no-repeat;
- 
+${'' /*     background: url(https://images.pexels.com/photos/2092479/pexels-photo-2092479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center no-repeat;
+ */}  
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,8 +40,15 @@ function Cover() {
 
 
     return (
+      
+    
+    
         <SectionTag>
-        
+        <div className='video'>
+        <video autoPlay loop muted width="100%" height="100%">
+          <source src={back} type="video/mp4"/>
+        </video>
+      </div>
            {/*  <div>
                 
                 <Button variant="primary" onClick={() => setModalShow(true)}>

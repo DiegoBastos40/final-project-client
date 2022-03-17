@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
+import "../../App.css"
 
 function EditFood() {
   const [name, setName] = useState('');
@@ -67,9 +68,9 @@ function EditFood() {
   };
 
   return (
-    <div>
+    <div className='iform'>
       <h3>Edit Request</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <label htmlFor="name">Name</label>
         <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />
 

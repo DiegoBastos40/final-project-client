@@ -21,6 +21,7 @@ import Dinner from './pages/Profile/Dinner';
 import Snacks from './pages/Profile/Snacks';
 import EditFood from './pages/Profile/EditFood';
 
+
 const StylesTag = styled.div`
   {
     
@@ -29,8 +30,11 @@ const StylesTag = styled.div`
 
 function App() {
   return (
+
+   
     <StylesTag>
     <Navbar />
+   
     <Routes>
     <Route path="/" element={<HomePage/>}></Route>
     <Route path="/auth/signup" element={<SignupPage />}/>
@@ -45,7 +49,7 @@ function App() {
     <Route path="/trainnerform/edit/:requestId" element={<EditRequest/>}/>
     <Route path="/diary/edit/:foodId" element={<EditFood/>}/>
     <Route path="/yourRequests" element={<CheckYourRequests/>}/>
-    <Route path="/yourBreakfast" element={<Breakfast/>}/>
+    <Route path="/yourBreakfast"  element={<Breakfast/>}/>
     <Route path="/yourLunch" element={<Lunch/>}/>
     <Route path="/yourDinner" element={<Dinner/>}/>
     <Route path="/yourSnacks" element={<Snacks/>}/>

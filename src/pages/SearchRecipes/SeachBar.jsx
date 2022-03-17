@@ -37,9 +37,8 @@ function SeachBar(){
   };
   return (
     <div className="searchBar">
-      <h1 onClick={getData}>Search Food</h1>
+      <h1 onClick={getData}>Search Recipes</h1>
       <form className="search-form" onSubmit={onSubmit}>
-        {alert !== "" && <Alert alert={alert} />}
         <input
           type="text"
           placeholder="Search Food"
@@ -49,6 +48,7 @@ function SeachBar(){
         />
         <input type="submit" value="search" />
       </form>
+    {alert !== "" && <Alert alert={alert} />}
       <div className="recipes">
         {recipes !== [] &&
           recipes.map((recipe) => <Recipe key={uuidv4()} recipe={recipe} />)}

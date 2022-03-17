@@ -11,6 +11,7 @@ function Lunch() {
   const [carbohydrates, setCarbohydrates] = useState(0);
   const [fat, setFat] = useState(0);
   const [quantity, setQuantity] = useState(0);
+  const [meal, setMeal] = useState("lunch");
  
 
   const { authenticateUser } = useContext(AuthContext);
@@ -33,7 +34,7 @@ function Lunch() {
       
    
     const body = {
-    
+        meal,
       name,
       calories,
       protein,

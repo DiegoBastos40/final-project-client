@@ -25,7 +25,7 @@ function CheckYourRequests() {
   }, []);
 
   return (
-    <div>
+    <div className="iform">
       <h2>Your Requests</h2>
 
       {user &&

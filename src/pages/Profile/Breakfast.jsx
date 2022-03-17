@@ -11,6 +11,7 @@ function BreackFast() {
   const [carbohydrates, setCarbohydrates] = useState(0);
   const [fat, setFat] = useState(0);
   const [quantity, setQuantity] = useState(0);
+  const [meal, setMeal] = useState("breakfast");
  
 
   const { authenticateUser } = useContext(AuthContext);
@@ -33,7 +34,7 @@ function BreackFast() {
       
    
     const body = {
-    
+    meal,
       name,
       calories,
       protein,
